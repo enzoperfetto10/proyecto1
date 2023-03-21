@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+        content="
+            width=device-width, 
+            initial-scale=1,
+            maximum-scale=3">
+    <title>Responsive Web Design</title>
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Introduccion -->
+    <header id="header">
+        <h1>Responsive</h1>
+        <p>Web Design</p>
+    </header>
+    <!-- Navegacion -->
+    <nav>
+        <a href="#">Responsive</a>
+        <button class="btn">&equiv;</button>
+        <ul class="menu">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="about.html">Acerca</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Contenido -->
+    <main>
+        <section class="row">
+            <header class="header">
+                <h2>Tipos de Diseño</h2>
+            </header>
+            <article class="card">
+                <header>
+                    <h3>Fluid Web Design</h3>
+                </header>
+                <div class="card-body">
+                    <p>
+                        Modelo que utiliza solamente porcentajes para definir el tamaño de los elementos de la pagina. Este tipo de diseño se implemento desde el comienzo de las paginas web, pero su principal problema radica en que no se adapta bien a pantallas pequeñas o grandes, debido a que el contenido se ajusta proporcionalmente.
+                    </p>
+                    <p>
+                        Una solucion a este modelo es el <strong>Liquid Design</strong> que implica el uso de limites para evitar que los elementos superen determinados tamaños o midan menos que tal valor. El problema que se genera con este tipo de diseño radica en los espacios resultantes.
+                    </p>
+                </div>
+                <footer>
+                    <address>
+                        para mas informacion visitar
+                        <a href="https://alumni.education">Alumni</a>
+                    </address>
+                </footer>
+            </article>
+            <article class="card">
+                <header>
+                    <h3>Adaptive Web Design</h3>
+                </header>
+                <div class="card-body">
+                    <p>
+                        Modelo que implementa el uso media queries o herramientas que detecten el tamaño de la ventana donde se visualiza y muestren el contenido en consecuencia. Implica la creacion de contenido por cada tamaño de pantalla objetivo, normalmente empezando desde la vista de escritorio, siendo la vista mobile una version reducida.
+                    </p>
+                    <p>
+                        Este tipo de diseño suele ser ideal para clientes con poco presupuesto, ya que creamos una pagina o estilos por cada vista y por lo tanto son faciles de mantener, pero implica la duplicacion de contenido en el servidor, e incluso la eliminacion de elementos segun el tamaño de la pantalla.
+                    </p>
+                </div>
+                <footer>
+                    <address>
+                        para mas informacion visitar
+                        <a href="https://alumni.education">Alumni</a>
+                    </address>
+                </footer>
+            </article>
+            <article class="card">
+                <header>
+                    <h3>Responsive Web Design</h3>
+                </header>
+                <div class="card-body">
+                    <p>
+                        Modelo que surge gracias a una publicacion realizada por <em>Ethan Marcotte</em> en el sitio <a href="https://alistapart.com/article/responsive-web-design/">A List Apart</a> donde menciona las capacidad que debe poseer un sitio web. En el mismo se menciona el uso de <em>Media Queries, un sistema de grillas, La planicacion del diseño y el uso de medidas relativas</em>
+                    </p>
+                    <p>
+                        Podemos encontrar lo que se conoce como <strong>Mobile First</strong> y <strong>Content-First</strong>, que consiste en la planificacion y desarrollo a partir de la vista mobile, siendo la mas simple y la que nos permite visualizar como agregar los contenidos; mientras que el otro modelo varia solamente en la implementacion de textos finales, para una mejor nocion del trabajo realizado.
+                    </p>
+                </div>
+                <footer>
+                    <address>
+                        Para mas informacion visitar
+                        <a href="https://alumni.education">Alumni</a>
+                    </address>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <header class="header">
+                <h2>Contenido Multimedia</h2>
+            </header>
+            <p>
+                En caso que utilicemos el elemento <strong>video</strong> y definamos un <em>width</em> al mismo, el navegador mantendra las proporciones de este debido a que puede acceder a la informacion del mismo. Pero en caso de utilizar elementos que no pertenecen al sitio, como la etiqueta <strong>iframe</strong> que muestra contenido de manera asincrona, nuestro navegador solamente recibe la informacion enviada por nuestro servidor donde se aloja el sitio y muestra la informacion obtenida como si de una ventana se tratase.
+            </p>
+            <h3>Relacion de Aspecto 4:3</h3>
+            <div class="ratio-4x3">
+                <iframe class="cover" 
+                    src="https://www.youtube.com/embed/uUueCDfJShg" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Relacion de Aspecto 16:9</h3>
+            <div class="ratio-16x9">
+                <iframe class="cover"
+                    src="https://www.youtube.com/embed/-P3VrLJDDww" 
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <!-- Pie de Pagina -->
+    <footer id="footer">
+        <!-- Mapa de Contacto -->
+        <iframe id="map" class="cover"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0701116821274!2d-58.37813014968164!3d-34.60238856483778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc473596c3%3A0x568d6d5f7f1f535d!2sEducaci%C3%B3nIT!5e0!3m2!1ses-419!2sar!4v1653059770201!5m2!1ses-419!2sar" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <button class="map btn icon-max"></button>
+        <!-- Formulario de Contacto  -->
+        <form action="" id="contact">
+            <h2>Dejanos tu consulta</h2>
+            <label for="contact_name">Ingrese su Nombre</label>
+            <input 
+                type="text" 
+                id="contact_name" 
+                name="contact_name" 
+                required>
+            <label for="contact_email">Ingrese su Correo</label>
+            <input 
+                type="email" 
+                id="contact_email" 
+                name="contact_email" 
+                required>
+            <label for="contact_consult">Ingrese su Consulta</label>
+            <textarea 
+                name="contact_consult" 
+                id="contact_consult" 
+                required></textarea>
+            <button class="btn">enviar</button>
+        </form>
+        <p class="copy">&copy;2022 Todos los derechos reservados</p>
+    </footer>
+    <!-- EMMET:
+        padre>hijo
+        header>h1
+
+        el+hermano
+        h2+p
+
+        el[atributo="valor"]
+        a[target="blank"]
+
+        el{texto}
+        p{soy un parrafo} 
+    -->
+    <!-- Scripts JS -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
